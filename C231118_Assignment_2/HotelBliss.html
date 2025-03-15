@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0c5eb8cc6b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <title>HotelBliss</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-white border-gray-200 dark:bg-gray-900">
+      <!---------------------------- NAV BAR ------------------------------>
+      <nav>
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="images/logo.jpg" class="h-8" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >HotelBliss</span
+            >
+          </div>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li class="flex items-center">
+                <a
+                  href="#home"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  href="#about"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  href="#rooms"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Rooms</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  href="#services"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <button
+                  class="bg-blue-500 text-white px-2 py-3 text-l rounded hover:bg-blue-800 transform hover:scale-110 transition-transform duration-300"
+                >
+                  Book Now
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!---------------------------- CAROUSEL ------------------------------>
+        <section id="home">
+          <div class="carousel w-full relative">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center space-y-4"
+              >
+                <div
+                  class="p-4 rounded text-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h1
+                    class="text-white text-4xl font-bold"
+                    style="font-family: 'Playfair Display', sans-serif"
+                  >
+                    Welcome to Hotel Bliss
+                  </h1>
+                  <p
+                    class="text-white text-2xl mt-4 w-1/2 mx-auto"
+                    style="font-family: 'Italianno', cursive"
+                  >
+                    A place of comfort, luxury, and exceptional hospitality.
+                    Enjoy elegant rooms, fine dining, and top-notch amenities in
+                    the heart of Saint's Martin. Book your perfect stay with us
+                    today!
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/bg1.jpg"
+                class="w-full h-160 object-cover"
+                style="width: 1350px"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center space-y-4"
+              >
+                <div
+                  class="p-4 rounded text-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h1
+                    class="text-white text-4xl font-bold"
+                    style="font-family: 'Playfair Display', sans-serif"
+                  >
+                    Welcome to Hotel Bliss
+                  </h1>
+                  <p
+                    class="text-white text-2xl mt-4 w-1/2 mx-auto"
+                    style="font-family: 'Italianno', cursive"
+                  >
+                    Where Ideas Meet Comfort – Experience a perfect blend of
+                    elegance and productivity in our business lounge, designed
+                    for meaningful conversations and successful meetings.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/bg5.jpg"
+                class="w-full h-160 object-cover"
+                style="width: 1350px"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center space-y-4"
+              >
+                <div
+                  class="p-4 rounded text-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h1
+                    class="text-white text-4xl font-bold"
+                    style="font-family: 'Playfair Display', sans-serif"
+                  >
+                    Welcome to Hotel Bliss
+                  </h1>
+                  <p
+                    class="text-white text-2xl mt-4 w-1/2 mx-auto"
+                    style="font-family: 'Italianno', cursive"
+                  >
+                    Embrace Serenity – Enjoy breathtaking views of nature from
+                    our tranquil spaces, where luxury meets the beauty of the
+                    outdoors.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/bg3.jpg"
+                class="w-full h-160 object-cover"
+                style="width: 1350px"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center space-y-4"
+              >
+                <div
+                  class="p-4 rounded text-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h1
+                    class="text-white text-4xl font-bold"
+                    style="font-family: 'Playfair Display', sans-serif"
+                  >
+                    Welcome to Hotel Bliss
+                  </h1>
+                  <p
+                    class="text-white text-2xl mt-4 w-1/2 mx-auto"
+                    style="font-family: 'Italianno', cursive"
+                  >
+                    Unwind in Style – Let the golden hues of the evening sky
+                    complement your perfect poolside retreat, where relaxation
+                    meets luxury.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/bg4.jpg"
+                class="w-full h-160 object-cover"
+                style="width: 1350px"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </nav>
+      <!---------------------------- ROOM CARDS ------------------------------>
+      <section id="rooms" class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <h2
+              class="text-4xl font-bold text-gray-900 dark:text-white"
+              style="font-family: 'Playfair Display', serif"
+            >
+              OUR ROOMS
+            </h2>
+            <p
+              class="text-xl mt-2 text-gray-600 dark:text-gray-300"
+              style="font-family: 'Italianno', cursive"
+            >
+              Discover our luxurious rooms designed for your comfort and
+              relaxation.
+            </p>
+          </div>
+          <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="relative">
+                <img
+                  class="w-full h-120 object-cover"
+                  src="images/standard room.jpg"
+                  alt="Room 1"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
+                >
+                  <div
+                    class="text-center p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500"
+                  >
+                    <h3 class="text-xl font-semibold mb-2 text-white">
+                      Deluxe Room
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                      Experience the ultimate in luxury and comfort in our
+                      Deluxe Room, featuring elegant decor and modern amenities.
+                    </p>
+                    <button
+                      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="relative">
+                <img
+                  class="w-full h-120 object-cover"
+                  src="images/deluxe.jpg"
+                  alt="Room 2"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
+                >
+                  <div
+                    class="text-center p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500"
+                  >
+                    <h3 class="text-xl font-semibold mb-2 text-white">
+                      Executive Suite
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                      Our Executive Suite offers a spacious living area,
+                      luxurious furnishings, and top-notch amenities for a truly
+                      memorable stay.
+                    </p>
+                    <button
+                      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="relative">
+                <img
+                  class="w-full h-120 object-cover"
+                  src="images/suite.jpg"
+                  alt="Room 3"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
+                >
+                  <div
+                    class="text-center p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500"
+                  >
+                    <h3 class="text-xl font-semibold mb-2 text-white">
+                      Presidential Suite
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                      Indulge in the ultimate luxury experience in our
+                      Presidential Suite, featuring exquisite decor and
+                      exclusive amenities.
+                    </p>
+                    <button
+                      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------- SERVICES CARDS ------------------------------>
+      <section id="services" class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <h2
+              class="text-4xl font-bold text-gray-900 dark:text-white"
+              style="font-family: 'Playfair Display', serif"
+            >
+              OUR SERVICES
+            </h2>
+            <p
+              class="text-xl mt-2 text-gray-600 dark:text-gray-300"
+              style="font-family: 'Italianno', cursive"
+            >
+              Explore the exceptional services we offer to make your stay
+              unforgettable.
+            </p>
+          </div>
+          <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div class="bg-blue-900 rounded-lg shadow-lg overflow-hidden">
+              <img
+                class="w-full h-80 object-cover"
+                src="images/catering.jpg"
+                alt="Catering"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-white">Catering</h3>
+                <p class="text-gray-300">
+                  Enjoy our top-notch catering services, offering a variety of
+                  delicious cuisines.
+                </p>
+              </div>
+            </div>
+            <div class="bg-blue-900 rounded-lg shadow-lg overflow-hidden">
+              <img
+                class="w-full h-80 object-cover"
+                src="images/gym.jpg"
+                alt="Gym"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-white">Gym</h3>
+                <p class="text-gray-300">
+                  Stay fit and healthy during your stay with our
+                  state-of-the-art gym facilities.
+                </p>
+              </div>
+            </div>
+            <div class="bg-blue-900 rounded-lg shadow-lg overflow-hidden">
+              <img
+                class="w-full h-80 object-cover"
+                src="images/rooftop.jpg"
+                alt="Rooftop"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-white">Rooftop</h3>
+                <p class="text-gray-300">
+                  Relax and unwind at our rooftop lounge, offering stunning
+                  views and a serene atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------- ABOUT US SECTION ------------------------------>
+      <section id="about" class="py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2
+                class="text-5xl font-bold text-gray-900 dark:text-white mb-6"
+                style="font-family: 'Playfair Display', serif"
+              >
+                About Us
+              </h2>
+              <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                Welcome to Hotel Bliss, where luxury meets comfort. Our hotel is
+                dedicated to providing exceptional hospitality and top-notch
+                amenities to ensure a memorable stay for our guests. Located in
+                the heart of Saint's Martin, we offer elegant rooms, fine
+                dining, and a range of services to cater to your every need.
+              </p>
+              <p class="text-lg text-gray-600 dark:text-gray-300">
+                Whether you're here for business or leisure, our team is
+                committed to making your stay as comfortable and enjoyable as
+                possible. Book your perfect stay with us today and experience
+                the best of what Hotel Bliss has to offer.
+              </p>
+            </div>
+            <div>
+              <img
+                src="images/bg2.jpg"
+                alt="About Us"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------- CONTACT US SECTION ------------------------------>
+      <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <h2
+              class="text-4xl font-bold text-gray-900 dark:text-white"
+              style="font-family: 'Playfair Display', serif"
+            >
+              Contact Us
+            </h2>
+            <p
+              class="text-xl mt-2 text-gray-600 dark:text-gray-300"
+              style="font-family: 'Italianno', cursive"
+            >
+              We'd love to hear from you! Here are our contact details.
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="images/contact.jpg"
+                alt="Contact Us"
+                class="w-100 h-80 rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="text-lg text-gray-600 dark:text-gray-300">
+              <p class="mb-4">
+                <strong>Address:</strong> 123 Bliss Street, Saint's Martin, SM
+                12345
+              </p>
+              <p class="mb-4"><strong>Phone:</strong> +1 234 567 890</p>
+              <p class="mb-4"><strong>Email:</strong> info@hotelbliss.com</p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="text-gray-600 dark:text-gray-300 hover:text-blue-700"
+                >
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="text-gray-600 dark:text-gray-300 hover:text-pink-500"
+                >
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  class="text-gray-600 dark:text-gray-300 hover:text-blue-400"
+                >
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------- FOOTER ------------------------------>
+      <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <p class="text-lg text-gray-300">
+                &copy; 2021 Hotel Bliss. All rights reserved.
+              </p>
+            </div>
+            <div class="text-right">
+              <a href="#" class="text-gray-300 hover:text-white hover:underline"
+                >Privacy Policy
+              </a>
+              <span class="mx-2">|</span>
+              <a href="#" class="text-gray-300 hover:text-white hover:underline"
+                >Terms of Service
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
